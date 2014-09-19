@@ -1,10 +1,10 @@
-Hangfire.Ninject
+Hangfire.Unity
 ================
 
-[![Build status](https://ci.appveyor.com/api/projects/status/79opt6sesdam48yq)](https://ci.appveyor.com/project/odinserj/hangfire-ninject)
+[![Build status](https://ci.appveyor.com/api/projects/status/79opt6sesdam48yq)](https://ci.appveyor.com/project/odinserj/hangfire-unity)
 
 [Hangfire](http://hangfire.io) background job activator based on 
-[Ninject](http://ninject.org) IoC Container. It allows you to use instance
+[Unity](https://unity.codeplex.com/) IoC Container. It allows you to use instance
 methods of classes that define parametrized constructors:
 
 ```csharp
@@ -35,11 +35,11 @@ Improve the testability of your jobs without static factories!
 Installation
 --------------
 
-Hangfire.Ninject is available as a NuGet Package. Type the following
+Hangfire.Unity is available as a NuGet Package. Type the following
 command into NuGet Package Manager Console window to install it:
 
 ```
-Install-Package Hangfire.Ninject
+Install-Package Hangfire.Unity
 ```
 
 Usage
@@ -51,7 +51,7 @@ The package provides an extension method for [OWIN bootstrapper](http://docs.han
 app.UseHangfire(config =>
 {
     var kernel = new StandardKernel();
-    config.UseNinjectActivator(kernel);
+    config.UseUnityActivator(kernel);
 });
 ```
 
@@ -59,7 +59,7 @@ In order to use the library outside of web application, set the static `JobActiv
 
 ```csharp
 var kernel = new StandardKernel();
-JobActivator.Current = new NinjectJobActivator(kernel);
+JobActivator.Current = new UnityJobActivator(kernel);
 ```
 
 HTTP Request warnings

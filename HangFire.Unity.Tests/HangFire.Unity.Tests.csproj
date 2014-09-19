@@ -91,7 +91,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="NinjectJobActivatorTests.cs" />
+    <Compile Include="UnityJobActivatorTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

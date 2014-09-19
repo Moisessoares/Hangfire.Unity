@@ -1,0 +1,20 @@
+﻿<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Hangfire.Unity</id>
+    <version>$version$</version>
+    <title>Hangfire Unity Integration</title>
+    <authors>Moisés Soares</authors>
+    <owners>Moises</owners>
+    <projectUrl>https://github.com/HangfireIO/Hangfire.Unity</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://raw.github.com/HangfireIO/Hangfire.Unity/master/LICENSE</licenseUrl>
+    <description>$description$</description>
+    <copyright>Copyright © 2014 Moisés Soares</copyright>
+    <tags>Hangfire Unity IoC</tags>
+	<dependencies>
+		<dependency id="Unity" version="3.5.1404.0" />
+		<dependency id="Hangfire.Core" version="1.0.1" />
+	</dependencies>
+  </metadata>
+</package>
